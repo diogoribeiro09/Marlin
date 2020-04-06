@@ -490,9 +490,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   //Kingroon KP3
-  #define DEFAULT_Kp 18.21
-  #define DEFAULT_Ki 1.49
-  #define DEFAULT_Kd 55.49
+
+  #define DEFAULT_Kp 17.41
+  #define DEFAULT_Ki 1.34
+  #define DEFAULT_Kd 56.54
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
