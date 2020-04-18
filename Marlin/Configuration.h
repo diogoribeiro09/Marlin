@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -2.35      //Should decrease to -2.06 for PETG
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -2.33      //Should decrease to -2.03 for PETG
 #define MY_DEFAULT_ESTEP 830
 #define MY_GRID_MAX_POINTS_X 3                    //ABL Mesh #points
 #pragma once
@@ -487,9 +487,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
- #define DEFAULT_Kp 15.13
-#define DEFAULT_Ki 1.18
-#define DEFAULT_Kd 48.66
+  #define DEFAULT_Kp 14.62
+  #define DEFAULT_Ki 1.06
+  #define DEFAULT_Kd 50.39
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -745,7 +745,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 600, 600, 10, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -785,7 +785,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-//#define CLASSIC_JERK
+#define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0
   #define DEFAULT_YJERK 10.0
