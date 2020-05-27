@@ -491,9 +491,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   //Kingroon KP3
 
-  #define DEFAULT_Kp 17.41
-  #define DEFAULT_Ki 1.34
-  #define DEFAULT_Kd 56.54
+  #define DEFAULT_Kp 11.56
+  #define DEFAULT_Ki 0.88
+  #define DEFAULT_Kd 37.76
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -545,10 +545,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  //Stock KP3 Magnetic
-  #define DEFAULT_bedKp 65.83
-  #define DEFAULT_bedKi 12.25
-  #define DEFAULT_bedKd 235.72
+  //Stock KP3 Magnetic + PEI
+  #define DEFAULT_bedKp 74.55
+  #define DEFAULT_bedKi 14.31
+  #define DEFAULT_bedKd 258.97
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
