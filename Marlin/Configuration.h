@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER 0      
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -2.6      
 #define MY_DEFAULT_ESTEP 425.50
 #define MY_GRID_MAX_POINTS_X 3                    //ABL Mesh #points
 
