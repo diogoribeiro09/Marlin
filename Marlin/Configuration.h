@@ -20,8 +20,8 @@
  *
  */
 #define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1      
-#define MY_DEFAULT_ESTEP 425.50
-#define MY_GRID_MAX_POINTS_X 3                    //ABL Mesh #points
+#define MY_DEFAULT_ESTEP 413.11
+#define MY_GRID_MAX_POINTS_X 2                    //ABL Mesh #points
 
 
 #pragma once
@@ -997,11 +997,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -34.6, 0, MY_Z_PROBE_OFFSET_FROM_EXTRUDER }
+#define NOZZLE_TO_PROBE_OFFSET { 56, 5, MY_Z_PROBE_OFFSET_FROM_EXTRUDER }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 37
+#define PROBING_MARGIN 56
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_SPEED (133*60)
@@ -1021,7 +1021,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 2
+//#define MULTIPLE_PROBING 2
 //#define EXTRA_PROBING    1
 
 /**
