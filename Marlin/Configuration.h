@@ -124,7 +124,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -1003,11 +1003,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 31.5, 0.5, MY_Z_PROBE_OFFSET_FROM_EXTRUDER }
+#define NOZZLE_TO_PROBE_OFFSET { 52.5, 0, MY_Z_PROBE_OFFSET_FROM_EXTRUDER }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 37
+#define PROBING_MARGIN 57
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 10000
