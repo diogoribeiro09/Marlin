@@ -19,8 +19,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1      
-#define MY_DEFAULT_ESTEP 413.11
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -0.245     
+#define MY_DEFAULT_ESTEP 827
 #define MY_GRID_MAX_POINTS_X 2                    //ABL Mesh #points
 
 
@@ -498,9 +498,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.0 }
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
-    #define DEFAULT_Kp 10.76
-    #define DEFAULT_Ki 0.73
-    #define DEFAULT_Kd 39.89
+    #define DEFAULT_Kp 12.41
+    #define DEFAULT_Ki 0.85
+    #define DEFAULT_Kd 45.28
   #endif
 #endif // PIDTEMP
 
@@ -538,9 +538,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //Stock KP3 Magnetic + PEI
-  #define DEFAULT_bedKp 27.03
-  #define DEFAULT_bedKi 5.03
-  #define DEFAULT_bedKd 96.79
+    #define DEFAULT_bedKp 37.86
+    #define DEFAULT_bedKi 6.84
+    #define DEFAULT_bedKd 139.62
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
@@ -835,7 +835,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-#define S_CURVE_ACCELERATION
+//#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
